@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FormularioRegristro</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Formulario de Registro</h1>
+        </div>
+    </header>
+    <section>
+        <article>
+            <div>
+                <form action="#" method = "post"></form>
+                <fieldset>
+                    <legend>Informacion Personal</legend>
+                    <div>
+                        <label for="nombre">Name:</label>
+                        <input type="text" name ="nombre" placeholder="Fernando Andres" required>
+                        <label for="Apellido">Apellido: </label>
+                        <input type="text" name= "apellido" placeholder="Quezada Menjivar">
+
+                    </div>
+                    <br>
+                    <div>
+                        <label for="FechaNacimiento">Fecha Nacimiento: </label>
+                        <input type="date" name= "FechaNacimiento" required>
+                    </div>
+                    <br>
+                    <div>
+                       <label for="AnimalFavorito"> Animal Favorito</label>
+                        <select>
+                            <option>Perro</option>
+                            <option>Gato</option>
+                            <option>delfin</option>
+                            <option>pinguino</option>
+                            <option>Oso Panda</option>
+                            <option>Tortuga</option>
+                            <option>Caballo</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Informacion para Iniciar</legend>
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" placeholder= "prueba@gmail.com" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="password">Password: </label>
+                        <input type="password" name="password" placeholder ="Ingrese password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="Debe contener por lo menos un numero una letra Mayuscula y una minuscula y minimo 8 caracteres " required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="verpassword">Verificacion de password: </label>
+                        <input type="password" name="verpassword" name="password" aria-placeholder="Verificacion de password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Debe contener por lo menos un numero una letra Mayuscula y una minuscula y minimo 8 caracteres" required>
+                    </div>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Contactos</legend>
+                    <div>
+                        <label for="dirrecion">Dirrecion:</label>
+                        <input type="text" name="dirrecion" placeholder="Ingrese dirrecion" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="Departamento">Departamento:</label>
+                        <input type="text" name="Departamento" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="cuidad">Cuidad:</label>
+                        <input type="text" name="cuidad" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="telefono"> Telefono:</label>
+                        <input type="tel" name = "telefono" required >
+                    </div>
+                </fieldset>
+                <br>
+                <div>
+                    <input type="submit" value = "Guardar">
+                    <input type="reset" value ="Reiniciar">
+                </div>
+            </div>
+        </article>
+    </section>
+</body>
+</html>
